@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Square from "./components/Square";
-import { determineWinner } from "./helpers";
+import { determineWinner } from "../helpers/determineWinner";
+import Square from './Square'
+
+
 
 
 export default function Board() {
