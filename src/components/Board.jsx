@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { determineWinner } from "../helpers/determineWinner";
 import Square from "./Square";
 
@@ -16,8 +15,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
     } else {
       nextSquares[i] = "O";
     }
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
+    onPlay(nextSquares);
   };
 
   const winner = determineWinner(squares);
