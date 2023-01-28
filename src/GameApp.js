@@ -8,7 +8,8 @@ export const GameApp = () => {
   const currentSquares = history[history.length - 1];
 
   function handlePlay(nextSquares) {
-    // TODO
+    setHistory([...history, nextSquares]);
+    setXIsNext(!xIsNext);
   }
 
 
